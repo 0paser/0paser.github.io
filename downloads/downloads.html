@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Machine Craft | Downloads</title>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #0f172a;
+            --card-bg: #1e293b;
+            --accent: #38bdf8;
+            --text: #f8fafc;
+            --text-dim: #94a3b8;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(rgba(15, 23, 42, 0.8), rgba(15, 23, 42, 0.8)), 
+                 url("/bg.jpg"); 
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: var(--text);
+            margin: 0;
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        header {
+            text-align: center;
+            padding: 60px 0;
+        }
+        h1 {
+            font-size: 3.5rem;
+            margin: 0;
+            background: linear-gradient(to right, #38bdf8, #818cf8);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            letter-spacing: -2px;
+        }
+        .server-status {
+            background: var(--card-bg);
+            padding: 20px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border: 1px solid #334155;
+            margin-bottom: 40px;
+        }
+        .ip-box {
+            font-weight: bold;
+            color: var(--accent);
+            background: #0f172a;
+            padding: 8px 16px;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: 0.2s;
+        }
+        .ip-box:hover {
+            background: var(--accent);
+            color: #000;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-top: 40px;
+        }
+        .card {
+            background: var(--card-bg);
+            padding: 25px;
+            border-radius: 12px;
+            border: 1px solid #334155;
+        }
+        .card h3 {
+            margin-top: 0;
+            color: var(--accent);
+        }
+        .article-link {
+            display: block;
+            color: var(--text);
+            text-decoration: none;
+            padding: 10px 0;
+            border-bottom: 1px solid #334155;
+            transition: 0.2s;
+        }
+        .article-link:hover {
+            color: var(--accent);
+            padding-left: 5px;
+        }
+        .btn {
+            display: inline-block;
+            background: var(--accent);
+            color: #0f172a;
+            padding: 10px 20px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        /* Directory Downloads Styling */
+        .directory-section {
+            margin-top: 20px;
+        }
+        .directory-category {
+            font-weight: bold;
+            color: var(--text-dim);
+            text-transform: uppercase;
+            font-size: 0.8rem;
+            letter-spacing: 1px;
+            margin-top: 20px;
+            margin-bottom: 8px;
+        }
+        .file-link {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            color: var(--text);
+            text-decoration: none;
+            padding: 10px 12px;
+            border-radius: 6px;
+            background: rgba(15, 23, 42, 0.5);
+            border: 1px solid #334155;
+            margin-bottom: 8px;
+            transition: 0.2s;
+        }
+        .file-link:hover {
+            border-color: var(--accent);
+            color: var(--accent);
+            background: rgba(15, 23, 42, 0.8);
+        }
+        .file-link span.dl-tag {
+            font-size: 0.8rem;
+            color: var(--accent);
+            font-weight: bold;
+        }
+        footer {
+            text-align: center;
+            margin-top: 60px;
+            color: var(--text-dim);
+            font-size: 0.9rem;
+        }
+        @media (max-width: 600px) {
+            .grid { grid-template-columns: 1fr; }
+            .server-status { flex-direction: column; gap: 15px; text-align: center; }
+        }
+        .staff-btn {
+            display: inline-block;
+            border: 1px solid #334155;
+            color: var(--text-dim);
+            padding: 8px 16px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-size: 0.85rem;
+            transition: 0.3s;
+        }
+        .staff-btn:hover {
+            background: #1e293b;
+            color: var(--accent);
+            border-color: var(--accent);
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>Machine Craft | Downloads</h1>
+        <p style="color: var(--text-dim); font-size: 1.2rem;">Relive the Golden Age of Industrial Minecraft</p>
+    </header>
+
+    <!-- Centered Home Button Container -->
+    <div style="text-align: center; margin-bottom: 40px;">
+        <a href="https://tekkitclassic.com/" class="btn">Home</a>
+    </div>
+
+    <!-- Downloads Directory Card -->
+    <div class="card" style="margin-bottom: 40px;">
+        <h3>Texture Packs</h3>
+        <p style="margin-top: 0; color: var(--text-dim);">Direct download links for Texture Packs.</p>
+        
+        <div class="directory-section">
+            <a href="https://example.com/downloads/java8-fix.zip" class="file-link" download>
+                <span>Java 8 Compatibility Patch (.zip)</span>
+                <span class="dl-tag">Download ↗</span>
+            </a>
+            <a href="https://example.com/downloads/optifine-1.2.5.jar" class="file-link" download>
+                <span>OptiFine HD C6 for 1.2.5 (.jar)</span>
+                <span class="dl-tag">Download ↗</span>
+            </a>
+        </div>
+
+        <br><br>
+        <h3>Saves</h3>
+        <p style="margin-top: 0; color: var(--text-dim);">Direct download links for Saves and Builds.</p>
+        <div class="directory-section">
+            <a href="https://example.com/downloads/save1.zip" class="file-link" download>
+                <span>Sample World Save 1 (.zip)</span>
+                <span class="dl-tag">Download ↗</span>
+            </a>
+            <a href="https://example.com/downloads/save2.zip" class="file-link" download>
+                <span>Sample World Save 2 (.zip)</span>
+                <span class="dl-tag">Download ↗</span>
+            </a>
+        </div>
+
+        <br><br>
+        <h3>Mods</h3>
+        <p style="margin-top: 0; color: var(--text-dim);">Direct downloads for Client-Side and Server-Side Mods.</p>
+        <div class="directory-section">
+            <a href="https://example.com/downloads/mod1.zip" class="file-link" download>
+                <span>Client Mod 1 (.zip)</span>
+                <span class="dl-tag">Download ↗</span>
+            </a>
+            <a href="https://example.com/downloads/mod2.zip" class="file-link" download>
+                <span>Client Mod 2 (.zip)</span>
+                <span class="dl-tag">Download ↗</span>
+            </a>
+        </div>
+
+        <br><br>
+        <h3>Plugins</h3>
+        <p style="margin-top: 0; color: var(--text-dim);">Direct Downloads for Server Plugins - Compiled with Craftbukkit 1.2.5 R1.3.</p>
+        <div class="directory-section">
+            <a href="https://example.com/downloads/plugin1.jar" class="file-link" download>
+                <span>Server Plugin 1 (.jar)</span>
+                <span class="dl-tag">Download ↗</span>
+            </a>
+            <a href="https://example.com/downloads/plugin2.jar" class="file-link" download>
+                <span>Server Plugin 2 (.jar)</span>
+                <span class="dl-tag">Download ↗</span>
+            </a>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
